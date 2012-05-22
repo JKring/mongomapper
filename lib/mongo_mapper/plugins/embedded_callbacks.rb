@@ -10,7 +10,7 @@ module MongoMapper
         define_model_callbacks :save, :create, :update, :destroy, :only => [:before, :after]
         define_model_callbacks :touch, :only => [:after]
 
-        embedded_callbacks_on
+        embedded_callbacks_off
       end
 
       module ClassMethods
